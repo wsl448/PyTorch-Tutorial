@@ -14,6 +14,7 @@ import numpy as np
 # convert numpy to tensor or vise versa
 np_data = np.arange(6).reshape((2, 3))
 torch_data = torch.from_numpy(np_data)
+# numpy를 tensor로 바꾸는 역할을 한다.
 tensor2array = torch_data.numpy()
 print(
     '\nnumpy array:', np_data,          # [[0 1 2], [3 4 5]]
