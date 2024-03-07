@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 # torch.manual_seed(1)    # reproducible
 
 x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)  # x data (tensor), shape=(100, 1)
+# unsqueeze를 사용하여 100개의 값을 가지는 1차원 텐서 x를 100*1의 2차원 텐서로 변환
 y = x.pow(2) + 0.2*torch.rand(x.size())                 # noisy y data (tensor), shape=(100, 1)
 
 # torch can only train on Variable, so convert them to Variable
