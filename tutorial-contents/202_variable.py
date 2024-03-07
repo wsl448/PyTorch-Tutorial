@@ -23,6 +23,7 @@ print(variable)     # [torch.FloatTensor of size 2x2]
 
 t_out = torch.mean(tensor*tensor)       # x^2
 v_out = torch.mean(variable*variable)   # x^2
+#*는 요소별 곱셈을 하는 것 주의하자.
 print(t_out)
 print(v_out)    # 7.5
 
@@ -49,7 +50,7 @@ print(variable.data)    # this is data in tensor format
  3  4
 [torch.FloatTensor of size 2x2]
 """
-
+# numpy 배열은 콤마 대신 공백을 사용하여 숫자 구분
 print(variable.data.numpy())    # numpy format
 """
 [[ 1.  2.]
