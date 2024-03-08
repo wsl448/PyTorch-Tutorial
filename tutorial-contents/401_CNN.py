@@ -112,6 +112,7 @@ for epoch in range(EPOCH):
         optimizer.zero_grad()           # clear gradients for this training step
         loss.backward()                 # backpropagation, compute gradients
         optimizer.step()                # apply gradients
+        # 위 부분은 거의 공통적으로 들어가면 된다고 보면 됨
 
         if step % 50 == 0:
             test_output, last_layer = cnn(test_x)
